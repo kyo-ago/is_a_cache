@@ -1,0 +1,24 @@
+{
+	"name": "is a cache",
+	"version": "0.1",
+	"manifest_version": 2,
+	"minimum_chrome_version": "24",
+	"icons": {
+		"16": "/img/logo.png",
+		"128": "/img/logo.png"
+	},
+	"browser_action" : {
+		"default_icon" : {
+			"19": "/img/logo.png",
+			"38": "/img/logo.png"
+		},
+		"default_title": "is a cache"
+	},
+	"background": {
+		"scripts": ["/src/background.js"]
+	},
+	"permissions": [
+		"webRequest",
+		"http://*"
+	]
+}
